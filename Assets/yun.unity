@@ -152,13 +152,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 733883118}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 880858cdbb0dbe14dba43ee950e557ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 4548fcb4bb9e83d4d8efc16ad818953b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fuel: 100
   laps: 0
-  lapProgress: 0
-  reqLapProgress: 200
+  curLapProgress: 0
+  reqLapProgress: 100
+  speed: 10
 --- !u!65 &733883120
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -246,6 +246,7 @@ GameObject:
   - component: {fileID: 1471400323}
   - component: {fileID: 1471400322}
   - component: {fileID: 1471400321}
+  - component: {fileID: 1471400324}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -318,6 +319,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1471400324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471400320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4548fcb4bb9e83d4d8efc16ad818953b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laps: 0
+  curLapProgress: 0
+  reqLapProgress: 100
+  speed: 10
 --- !u!1 &1715463245
 GameObject:
   m_ObjectHideFlags: 0
