@@ -12,9 +12,9 @@ public class XP_System : MonoBehaviour
     //character stats (change with level)
     public float maxHealth;
     public float curHealth;
-    public float def;
+    public int def;
     public float speed;
-    public float attack;
+    public int atk;
 
     // Start is called before the first frame update
     void Start()
@@ -27,8 +27,15 @@ public class XP_System : MonoBehaviour
     {
         
     }
-    public void InitStats(float maxHealth, float def, float speed, float attack, int level, int reqXP)
+    public void InitStats(float maxHealth, int def, float speed, int atk, int level, int reqXP)
     {
+        maxHealth = 120.0f;
+        curHealth = maxHealth;
+        def = Random.Range(1, 4);
+        speed = Random.Range(1.0f, 1.4f);
+        atk = Random.Range(1, 3);
+        level = 1;
+        reqXP = 110;
 
     }
     public void Interaction(int exp)
